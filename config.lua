@@ -92,7 +92,7 @@ Config.ClothingShops = {
 		coords = vector3(1861.1047363281, 3689.2331542969, 34.276859283447),
 		MarkerSize   = {x = 2.0, y = 2.0, z = 0.0}
 	},
-	[18] = {
+	[18] = { -- Plastic Surgeon
 		blip = true,
 		coords = vector3(1834.5977783203, 3690.5405273438, 34.270645141602),
 		MarkerSize   = {x = 2.0, y = 2.0, z = 0.0}
