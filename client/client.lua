@@ -551,3 +551,144 @@ RegisterCommand('clothingmenu', function()
 		end
 	end, config)
 end, false)
+
+----TARGET STUFF----
+RegisterNetEvent('fivem-appearance:PDclothingShop', function()
+	exports['qb-menu']:openMenu({
+        {
+            header = "👚 | PD Clothing Closet",
+            isMenuHeader = true, -- Set to true to make a nonclickable title
+        },
+        {
+            header = "Change Clothes",
+			txt = "Pick from a wide range of items to wear",
+            params = {
+                event = "fivem-appearance:PDclothingMenu",
+            }
+        },
+		{
+            header = "Change Outfit",
+			txt = "Pick from any of your currently saved outfits",
+            params = {
+                event = "fivem-appearance:pickNewOutfit",
+                args = {
+                    number = 1,
+                    id = 2
+                }
+            }
+        },
+		{
+            header = "Save New Outfit",
+			txt = "Save a new outfit you can use later on",
+            params = {
+                event = "fivem-appearance:saveOutfit",
+            }
+        },
+		{
+            header = "Delete Outfit",
+			txt = "Yeah... We didnt like that one either",
+            params = {
+                event = "fivem-appearance:deleteOutfitMenu",
+                args = {
+                    number = 1,
+                    id = 2
+                }
+            }
+        },
+    })
+end)
+
+RegisterNetEvent('fivem-appearance:PillboxclothingShop', function()
+	exports['qb-menu']:openMenu({
+        {
+            header = "👚 | Pillbox Clothing Closet",
+            isMenuHeader = true, -- Set to true to make a nonclickable title
+        },
+        {
+            header = "Change Clothes",
+			txt = "Pick from a wide range of items to wear",
+            params = {
+                event = "fivem-appearance:PillboxclothingMenu",
+            }
+        },
+		{
+            header = "Change Outfit",
+			txt = "Pick from any of your currently saved outfits",
+            params = {
+                event = "fivem-appearance:pickNewOutfit",
+                args = {
+                    number = 1,
+                    id = 2
+                }
+            }
+        },
+		{
+            header = "Save New Outfit",
+			txt = "Save a new outfit you can use later on",
+            params = {
+                event = "fivem-appearance:saveOutfit",
+            }
+        },
+		{
+            header = "Delete Outfit",
+			txt = "Yeah... We didnt like that one either",
+            params = {
+                event = "fivem-appearance:deleteOutfitMenu",
+                args = {
+                    number = 1,
+                    id = 2
+                }
+            }
+        },
+    })
+end)
+
+RegisterNetEvent('fivem-appearance:ElBurroclothingShop', function()
+	exports['qb-menu']:openMenu({
+        {
+            header = "👚 | Fire Clothing Closet",
+            isMenuHeader = true, -- Set to true to make a nonclickable title
+        },
+        {
+            header = "Change Clothes",
+			txt = "Pick from a wide range of items to wear",
+            params = {
+                event = "fivem-appearance:ElburroclothingMenu",
+            }
+        },
+		{
+            header = "Change Outfit",
+			txt = "Pick from any of your currently saved outfits",
+            params = {
+                event = "fivem-appearance:pickNewOutfit",
+                args = {
+                    number = 1,
+                    id = 2
+                }
+            }
+        },
+		{
+            header = "Save New Outfit",
+			txt = "Save a new outfit you can use later on",
+            params = {
+                event = "fivem-appearance:saveOutfit",
+            }
+        },
+		{
+            header = "Delete Outfit",
+			txt = "Yeah... We didnt like that one either",
+            params = {
+                event = "fivem-appearance:deleteOutfitMenu",
+                args = {
+                    number = 1,
+                    id = 2
+                }
+            }
+        },
+    })
+end)
+
+function displayNUIText(text)
+    SendNUIMessage({type = "display", text = text, color = 'blue'})
+    Wait(1)
+end
