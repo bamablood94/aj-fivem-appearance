@@ -65,3 +65,5 @@ RegisterNetEvent('fivem-appearances:buyclothing', function()
 		TriggerClientEvent('fivem-appearance:purchase', src, true)
 	end
 end)
+
+
